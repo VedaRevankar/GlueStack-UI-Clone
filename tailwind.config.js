@@ -460,7 +460,7 @@ module.exports = {
       light: ["SFPro-Light", "sans"],
       heavy: ["SFPro-Heavy", "sans"],
       heading: ["SFPro-Bold1", "sans"],
-      bold: ["SFPro-Bold1", "sans"],
+      Bold: ["SFPro-Bold1", "sans"],
       medium: ["SFPro-medium-webfont", "sans"],
       semibold: ["SFPro-Semibold", "sans"],
     },

@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
 interface TextProps {
   color?: string;
   font?: string;
   size?: string;
-  align?: 'left' | 'center' | 'right';
+  align?: "left" | "center" | "right";
+  className?: string;
   children: React.ReactNode;
 }
 
@@ -14,13 +15,20 @@ const Text: React.FC<TextProps> = ({
   size,
   color,
   font,
+  className,
 }) => {
-  const alignClass = align ? `text-${align}` : 'text-left';
-  const sizeClass = size ? `${size}` : 'base';
-  const colorClass = color ? `${color}` : 'black';
-  const fontClass = font ? `font-${font}` : 'font-display';
+  const alignClass = align ? `text-${align}` : "text-left";
+  const sizeClass = size ? `${size}` : "text-base";
+  const colorClass = color ? `${color}` : "text-black";
+  const fontClass = font ? `font-${font}` : "";
 
-  return <p className={`${alignClass} text-${sizeClass} text-${colorClass} ${fontClass}`}>{children}</p>;
+  return (
+    <p
+      className={`${alignClass} ${sizeClass} ${colorClass} ${fontClass} ${className}`}
+    >
+      {children}
+    </p>
+  );
 };
 
 export default Text;
