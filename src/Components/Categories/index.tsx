@@ -1,25 +1,42 @@
 "use client";
 import Container from "@/elements/container";
-import Image from "next/image";
-
-import { Icon } from "@iconify/react";
-
 import Text from "@/elements/Text";
-import Heading from "@/elements/Heading";
+import Category from "./Category";
 
-interface ResumeCoursesProps {}
+interface CategoriesProps {}
 
-const ResumeCourses: React.FC<ResumeCoursesProps> = () => {
+const Categories: React.FC<CategoriesProps> = () => {
   return (
-    <div className="bg-white mt-6 pb-5 border-b border-gray-200 ">
+    <div className="bg-white">
       <Container>
         <Text color="text-coolGray-800" size="text-md" className="font-bold">
           Categories
         </Text>
-        <div className="flex justify-between mt-3 gap-8"></div>
+        <div className="flex mt-4 gap-8 mb-5">
+          <Category categoryIcon={"ic:baseline-plus"} categoryName="Maths" />
+          <Category categoryIcon={"ion:bulb-outline"} categoryName="Physics" />
+          <Category
+            categoryIcon={"mingcute:flask-line"}
+            categoryName="Chemistry"
+          />
+          <Category
+            categoryIcon={"material-symbols:coronavirus"}
+            categoryName="Biology"
+          />
+          <Category categoryIcon={"mdi:tennis-ball"} categoryName="Sports" />
+          <Category
+            categoryIcon={"ic:round-psychology"}
+            categoryName="Psychology"
+          />
+          <Category
+            categoryIcon={"ic:baseline-business-center"}
+            categoryName="Business"
+          />
+          <Category categoryIcon={"ri:more-2-fill"} categoryName="More" />
+        </div>
       </Container>
     </div>
   );
 };
 
-export default ResumeCourses;
+export default Categories;

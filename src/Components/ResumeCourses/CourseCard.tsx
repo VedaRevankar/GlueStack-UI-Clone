@@ -16,7 +16,7 @@ const CourseCard: React.FC<CourseCardProps> = ({
   courseName,
 }) => {
   return (
-    <div className="rounded-lg bg-coolGray-100 mb-5">
+    <div className="rounded-lg bg-coolGray-100">
       <Image src={courseImage} alt={courseName} className="rounded-lg" />
 
       <div className="flex items-start justify-between p-3">
