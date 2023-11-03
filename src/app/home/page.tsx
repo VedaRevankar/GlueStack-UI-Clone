@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Banner from "@/Components/Banner";
-import ResumeCourses from "@/Components/ResumeCourses";
-import Categories from "@/Components/Categories";
-import TrendingCourses from "@/Components/TrendingCourses";
+import Banner from "@/Components/HomePage/Banner";
+import ResumeCourses from "@/Components/HomePage/ResumeCourses";
+import Categories from "@/Components/HomePage/Categories";
+import TrendingCourses from "@/Components/HomePage/TrendingCourses";
 
 export default function home() {
   return (

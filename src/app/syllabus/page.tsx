@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Banner from "@/Components/Banner";
+import Banner from "@/Components/HomePage/Banner";
 
 export default function syllabus() {
   return <Banner />;

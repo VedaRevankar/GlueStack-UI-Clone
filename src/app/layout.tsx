@@ -21,9 +21,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className="flex">
+        <div className="flex h-screen">
           <Sidebar />
-          <div className="flex-1 p-8 bg-primary-50">{children}</div>
+          <div className="flex-1 flex flex-col p-8 bg-primary-50">
+            <div className="">{children}</div>
+          </div>
         </div>
       </body>
     </html>

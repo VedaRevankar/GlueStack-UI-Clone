@@ -1,8 +1,10 @@
 "use client";
 import Container from "@/elements/container";
-import CourseImage1 from "public/images/Images.png";
-import CourseImage2 from "public/images/Image.png";
-import CourseImage3 from "public/images/Image2.png";
+import CourseImage1 from "public/images/trend1.png";
+import CourseImage2 from "public/images/trend2.png";
+import CourseImage3 from "public/images/trend3.png";
+import CourseImage4 from "public/images/trend4.png";
+import CourseImage5 from "public/images/trend1.png";
 
 import Text from "@/elements/Text";
 import TrendingCourseCard from "./TrendingCourseCard";
@@ -19,8 +21,8 @@ const TrendingCourses: React.FC<TrendingCoursesProps> = () => {
         <TrendingCourseCard courseImage={CourseImage1} />
         <TrendingCourseCard courseImage={CourseImage2} />
         <TrendingCourseCard courseImage={CourseImage3} />
-        <TrendingCourseCard courseImage={CourseImage3} />
-        <TrendingCourseCard courseImage={CourseImage3} />
+        <TrendingCourseCard courseImage={CourseImage4} />
+        <TrendingCourseCard courseImage={CourseImage5} />
       </div>
     </Container>
   );
